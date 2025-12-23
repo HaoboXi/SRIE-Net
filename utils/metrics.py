@@ -109,7 +109,7 @@ class R1_mAP_eval():
             'g_camids': g_camids,
         }
 
-        scipy.io.savemat('/disk/wr/TransReID_transfg_irt/logs/SIEN-vcclothes-pytorch_result.mat', result)
+        scipy.io.savemat('../logs/SIEN-vcclothes-pytorch_result.mat', result)
         if self.reranking:
             print('=> Enter reranking')
             distmat = re_ranking(qf, gf, k1=50, k2=15, lambda_value=0.3)
