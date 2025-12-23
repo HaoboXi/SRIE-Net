@@ -67,26 +67,18 @@ class Ltcc(BaseImageDataset):
 
         for img_path in sorted(img_paths):
             pid, _, _ = map(int, pattern1.search(img_path).groups())
-            clothes_id = pattern2.search(img_path).group(1)
             if pid == -1: continue  
             pid_container.add(pid)
-            clothes_container.add(clothes_id)
         pid_container = sorted(pid_container)
         clothes_container = sorted(clothes_container)
         pid2label = {pid: label for label, pid in enumerate(pid_container)}
         dataset = []
 
-        num_pids = len(pid_container)
-        num_clothes = len(clothes_container)
-
-        clothes2label = {clothes_id: label for label, clothes_id in enumerate(clothes_container)}
-        pid2clothes = np.zeros((num_pids, num_clothes))
 
         for img_path in sorted(img_paths):
             pid, _, camid = map(int, pattern1.search(img_path).groups())
             if pid == -1: continue  
             clothes = pattern2.search(img_path).group(1)
-            clothes_id = clothes2label[clothes]
             if msk_dir != '':
                 name = img_path.split('.')[0] + '.npy'
                 name = name.split('/')[-1]
