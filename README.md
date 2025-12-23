@@ -113,9 +113,6 @@ In the configs, you typically set:
 
 3. **`datasets/`**  
    - Contains all Python scripts for loading and preprocessing datasets corresponding to those under `configs/`.  
-   - **Key files:**
-     - `ltcc.py`, `prcc.py`, `nkup.py`: define the paths to the masked datasets for LTCC, PRCC, NKUP respectively. **These paths cannot be modified via the `.yml` configs; you must edit them here if needed.**  
-     - `make_dataloader.py`: defines data augmentation strategies, how to randomly load data, and how to set random seeds.
 
 4. **`figs/`**  
    - Stores network architecture and framework diagrams.
@@ -165,7 +162,7 @@ In the configs, you typically set:
 
      ```bash
      conda env create -f environment.yml
-     conda activate <your_env_name>
+     conda activate py
      ```
 
    - Using pip:
@@ -175,8 +172,7 @@ In the configs, you typically set:
      ```
 
 2. **Download datasets**  
-   Because some datasets require official permission to access, we provide already pre-processed versions of the three datasets **PRCC**, **LTCC**, and **NKUP** to make reproduction easier:
-   因为某些原因
+   Because some datasets require official permission to access, we provide already pre-processed versions of the three datasets PRCC, LTCC, and NKUP to make reproduction easier. To respect and protect the original authors’ copyrights, if you need to download the datasets, please obtain them through the official channels.
 
 3. **Download pretrained weights**  
    Two pretrained weight files are used:
