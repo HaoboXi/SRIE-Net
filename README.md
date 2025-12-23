@@ -176,10 +176,7 @@ In the configs, you typically set:
 
 2. **Download datasets**  
    Because some datasets require official permission to access, we provide already pre-processed versions of the three datasets **PRCC**, **LTCC**, and **NKUP** to make reproduction easier:
-
-   - PRCC: [Baidu Disk](https://pan.baidu.com/s/1I-p1tndkNrtInC2kOjd16A?pwd=1213) · [Google Drive](https://drive.google.com/file/d/1MumGSmkKSd-Ioi_V9x18oicwTnBCWC0-/view?usp=sharing)
-   - LTCC: [Baidu Disk](https://pan.baidu.com/s/1rR-ABTxa223nFf_F-n-wmg?pwd=1211) · [Google Drive](https://drive.google.com/file/d/1HvzP4qA2NNSlCge6e3mM1HHrnDFIlWVQ/view?usp=drive_link)
-   - NKUP: [Baidu Disk](https://pan.baidu.com/s/1QaF7v3KWSZEWMJ6IHeDmlg?pwd=1212) · [Google Drive](https://drive.google.com/file/d/1Xz6KQEkDXuBaDGlEh6DHtEditnTFIU8j/view?usp=sharing)
+   因为某些原因
 
 3. **Download pretrained weights**  
    Two pretrained weight files are used:
@@ -259,9 +256,9 @@ The script `test.py` is used for model evaluation.
 
 0. First, download the best trained weight files corresponding to the paper results:
 
-   - PRCC: [Baidu Disk](https://pan.baidu.com/s/1SrhLO2gcMwOV0YgP-lfREw?pwd=1113) · [Google Drive](https://drive.google.com/file/d/1N9k28J2VAIftTgbTYbLB1HwrwaZBdF3V/view?usp=sharing)
-   - LTCC: [Baidu Disk](https://pan.baidu.com/s/1jWoRjo2OR9Y_uxE8KjcwQg?pwd=1111) · [Google Drive](https://drive.google.com/file/d/1ZtLzOtbAdqaHOnc_gFdrr9gjOPvrFZHd/view?usp=drive_link)
-   - NKUP: [Baidu Disk](https://pan.baidu.com/s/1RR_dt-YMxtKN93JBk1OmBw?pwd=1112) · [Google Drive](https://drive.google.com/file/d/1wznFuccnLvCTPbLkVJMkE8Zbg8l7PQWS/view?usp=sharing)
+   - PRCC: [Baidu Disk](https://pan.baidu.com/s/1v2Ibm-biTcs6j6-NY6nrnQ?pwd=1112) · [Google Drive](https://drive.google.com/file/d/1N9k28J2VAIftTgbTYbLB1HwrwaZBdF3V/view?usp=sharing)
+   - LTCC: [Baidu Disk](https://pan.baidu.com/s/1XHS5AsT5le_UmS-tR-3ntQ?pwd=1111) · [Google Drive](https://drive.google.com/file/d/1ZtLzOtbAdqaHOnc_gFdrr9gjOPvrFZHd/view?usp=drive_link)
+   - NKUP: [Baidu Disk](https://pan.baidu.com/s/1WkGYThtJd47hbyk3en5hJA?pwd=1113) · [Google Drive](https://drive.google.com/file/d/1wznFuccnLvCTPbLkVJMkE8Zbg8l7PQWS/view?usp=sharing)
 
    Place these three files in any location you prefer, and specify that location in the `TEST.WEIGHT` parameter.
 
